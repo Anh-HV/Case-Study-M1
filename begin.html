@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ád</title>
+    </head>
+    <style>
+        body {
+            background:linear-gradient( pink,white,aqua,blue);
+            width: 800px;
+            height:800px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        #main{
+            margin-left:-150px;
+            padding-left:20%;
+            display: block;
+            width: 1000px;
+            height:750px;
+            background:url(../img/background.jpg);
+        }
+        #Start {
+
+            background:linear-gradient( rgb(20, 236, 20),white) ;
+            width: 80%;
+            height: 200px;
+            text-align: center;
+            font: 10em sans-serif;
+            border-radius: 50px;
+            
+        }
+        #Start :hover{
+            color: white;
+            background:white
+        }
+        #control{
+            background: rgb(238, 227, 227);
+            margin:5px;
+            width: 80%;
+            height: 500px;
+            font-size: 50px;
+            border-radius: 30px;
+        }
+        #control table{
+           margin:auto;
+        }
+        .verticalLine {
+        border-left: thick solid black;
+        color: red; 
+}
+    </style>
+<body>
+    <div id="main">
+    <div id="control">
+        <div style="text-align:center;color:aqua;background:grey;">Control</div>
+        <div style="text-align:center;color: rgb(20, 236, 20);">Flappy Dog :)</div>
+        <table id="tb">
+        <tr>
+            <td>Press Space</td>
+            <td rowspan="3" class="verticalLine">&nbsp to Jump</td>
+        </tr>
+        <tr>
+            <td>Press w</td>
+        </tr>
+        <tr>
+            <td>Press &#8593</td>
+        </tr>
+    </table>
+    </div>
+    <div id="Start">
+        <a href="index.html" style="color: rgba(171, 172, 196, 0.945)">Start</a>
+    </div>
+</div>
+</body>
+</html>
