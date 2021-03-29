@@ -1,0 +1,16 @@
+body{
+    background:linear-gradient( pink,white,aqua,blue);
+    display:block;
+}
+canvas{
+    align-items: center;
+    border: 1px solid aqua;
+    margin:  auto;
+    display:block;
+    background:url(../img/background.jpg);
+    border-radius:10%
+}
+canvas:hover{
+    border-bottom:2px solid pink ;
+    border-right:2px solid red ;
+}
