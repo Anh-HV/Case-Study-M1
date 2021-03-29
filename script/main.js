@@ -82,7 +82,7 @@ function stop() {
     clear();
     let sc = score++;
     
-    ctx.fillText("Score:" + Math.floor(sc),800, 100);
+    ctx.fillText("Score:" + Math.floor(sc/100),800, 100);
     if(Math.floor(sc) >1000&&Math.floor(sc)<2000) maxGap =200;
     else if(Math.floor(sc)>2000 && Math.floor(sc)<3000) maxGap = 150;
     else if(Math.floor(sc)>3000 && Math.floor(sc)<4000) maxGap =100;
