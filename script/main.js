@@ -2,7 +2,10 @@ var minGap = 100;
 var maxGap=250;
 var gap = randGap();
 let frame = 0 ;
+let frame2 = 0 ;
+
 var myObstacle=[];
+var myObstacle2=[];
 var down1 = false;
 
 const canvas = document.getElementById("myCanvas");
@@ -10,12 +13,15 @@ const ctx = canvas.getContext("2d");
 
 const imgdog = document.getElementById("dog");
 const img = document.getElementById("catch");
+const img2 = document.getElementById("catch1");
 
 var audio = document.getElementById("audio");
 var audio_lose = document.getElementById("audio_lose");
 
 
 const obs = new Obstacle(img);
+const obs2 = new ObstacleFly(img2);
+
 let dog = new Dog(imgdog,32,0,32,32,50,500,60,60);
 
 function jump(evt) {
@@ -31,6 +37,7 @@ function down() {
     dog.change();
     down1 = false;
 }
+
 
 function everyinterval(n) {
     if(frame%n ==0) return true;
@@ -53,8 +60,6 @@ function checkLose() {
         }
     }
 }
-for(let i=0;i<myObstacle.length;i++){
-console.log(dog.crashWith(myObstacle[i]));}
 
 function stop() {
     audio_lose.play();
@@ -75,9 +80,6 @@ function stop() {
     window.addEventListener("keydown",jump);
     window.addEventListener("keyup",down);
   
-    for(let i=0;i<myObstacle.length;i++){
-        console.log(myObstacle[i]);
-    }
     checkLose();
     clear();
     let sc = score++;

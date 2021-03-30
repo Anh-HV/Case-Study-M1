@@ -1,10 +1,10 @@
 class Obstacle{
-    constructor(img,width,height){
+    constructor(img){
     this.img = img;
     this.x = canvas.width-80;
     this.y = canvas.height-220;
-    this.width =80;
-    this.height =100; 
+    this.width =70;
+    this.height =80; 
     }
     drawobs() {
         ctx.drawImage(img,this.x,this.y,this.width,this.height);
